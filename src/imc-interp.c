@@ -36,6 +36,8 @@
 
 #include "imc.h"
 
+int (*imc_recv_hook)(const imc_packet *p, int bcast); // prool (for cygwin)
+
 /* rignore'd people */
 imc_ignore_data *imc_ignore_list;
 /* prefixes for all data files */

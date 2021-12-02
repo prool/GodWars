@@ -1868,10 +1868,12 @@ void do_save(CHAR_DATA *ch, char *argument) {
     if(IS_NPC(ch)) {
         return;
     }
+#if 0 // prool: save for all!
     if(!IS_IMMORTAL(ch) && ch->mkill < 5) {
         send_to_char("You must kill at least 5 mobs before you can save.\n\r", ch);
         return;
     }
+#endif
     get_totalscore(ch);
     /*
         save_char_obj_backup( ch );

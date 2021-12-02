@@ -51,7 +51,7 @@ extern          int                     top_ed;
 extern          int                     top_room;
 
 AREA_DATA		*	area_free;
-EXTRA_DESCR_DATA	*	extra_descr_free;
+//EXTRA_DESCR_DATA	*	extra_descr_free; // prool: for cygwin
 EXIT_DATA		*	exit_free;
 ROOM_INDEX_DATA		*	room_index_free;
 OBJ_INDEX_DATA		*	obj_index_free;

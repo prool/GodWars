@@ -333,7 +333,7 @@ extern imc_mailid *imc_idlist;
 extern char imc_lasterror[IMC_DATA_LENGTH];
 
 /* packet hook */
-int (*imc_recv_hook)(const imc_packet *p, int bcast);
+extern int (*imc_recv_hook)(const imc_packet *p, int bcast); // prool: add extern
 
 
 /* imc-util.c exported functions */
